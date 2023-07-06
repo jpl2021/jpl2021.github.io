@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiCasaSol - inmueble</title>
+    <link rel="shortcut icon" href="img/casasol.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="contenedor-nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="img/LOGITO.png" alt="" class="logo-menu">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="activo" href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <div>
+            <h2 class="titulo text-center"> Centrico local comercial</h2>
+            <span class="linea"></span>
+        </div>
+        <div class="container galeria">
+            <div class="caja caja1">
+                <a href="#img1"><img src="img/4piso/4piso1.jpg" alt="Fachada"></a>
+                <p>Amplio Local</p><p>Baño completo</p>
+            </div>
+            <div class="caja caja2">
+                <a href="#img2"><img src="img/4piso/4piso2.jpg" alt="ambiente 2"></a>
+                <p>Zona comercial</p><p>Bitel, Mass, Cajas, restauranes</p>
+            </div>
+            <div class="caja caja3">
+                <a href="#img3"><img src="img/4piso/4piso3.jpg" alt="ambiente 3"></a>
+                <p>Vista esplendida</p><p>Excelente iluminación</p>
+            </div>
+            <div class="caja caja4">
+                <a href="#img4"><img src="img/4piso/4piso4.jpeg" alt="ambiente 4"></a>
+                <p>Acceso a nuestro local</p><p>con buenos acabados</p>
+            </div>
+            <div class="caja caja5">
+                <a href="#img5"><img src="img/4piso/4piso5.jpeg" alt="ambiente 5"></a>
+                <p>Baño completo</p><p>Agua todo el día</p>
+            </div>
+            <div class="caja caja6">
+                <a href="#img6"><img src="img/4piso/4piso6.jpg" alt="ambiente6"></a>
+                <p>A una cuadra de la </p><p>Plaza de Armas de Chosica</p>
+            </div>
+            <div class="caja caja7">
+                <a href="#img7"><img src="img/4piso/4piso7.jpg" alt="ambiente6"></a>
+                <p>Cristo Blanco</p><p>Zona turística</p>
+            </div>
+        </div>
+        <div class="modal" id="img1">
+            <h2 class="titulos">Amplio Local</h2>
+            <div class="imagen">
+                <a href="#img6">&#60;</a>
+                <a href=""><img src="img/4piso/4piso1.jpg" alt="ambiente1"></a>
+                <a href="#img2">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+        <div class="modal" id="img2">
+            <h2 class="titulos">localización estrategica</h2>
+            <div class="imagen">
+                <a href="#img1">&#60;</a>
+                <a href=""><img src="img/4piso/4piso2.jpg" alt="ambiente2"></a>
+                <a href="#img3">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+        <div class="modal" id="img3">
+            <h2 class="titulos">Excelente iluminación</h2>
+            <div class="imagen">
+                <a href="#img2">&#60;</a>
+                <a href=""><img src="img/4piso/4piso3.jpg" alt="ambiente3"></a>
+                <a href="#img4">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+        <div class="modal" id="img4">
+            <h2 class="titulos">Acceso a nuestro local, buenos acabados</h2>
+            <div class="imagen">
+                <a href="#img3">&#60;</a>
+                <a href=""><img src="img/4piso/4piso4.jpeg" alt="ambiente4"></a>
+                <a href="#img5">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+        <div class="modal" id="img5">
+            <h2 class="titulos">Baño completo, agua todo el día</h2>
+            <div class="imagen">
+                <a href="#img4">&#60;</a>
+                <a href=""><img src="img/4piso/4piso5.jpeg" alt="ambiente5"></a>
+                <a href="#img6">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+        <div class="modal" id="img6">
+            <h2 class="titulos">a una cuadra de la Plaza de Armas de Chosica</h2>
+            <div class="imagen">
+                <a href="#img5">&#60;</a>
+                <a href=""><img src="img/4piso/4piso6.jpg"<alt="ambiente5"></a>
+                <a href="#img7">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+        <div class="modal" id="img7">
+            <h2 class="titulos">Cercano a lugares turísticos</h2>
+            <div class="imagen">
+                <a href="#img6">&#60;</a>
+                <a href=""><img src="img/4piso/4piso7.jpg" alt="ambiente5"></a>
+                <a href="#img1">&#62;</a>
+            </div>
+            <a class="cerrar" href="#">x</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#">Compra</a>
+                    <a href="#">Alquila</a>
+                    <a href="#">Proyectos</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Política de Privacidad</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Bolg</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Servicio de Saneamiento</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos Reservados, MiCasaSol</p>
+    </footer>
+</body>
+</html>
