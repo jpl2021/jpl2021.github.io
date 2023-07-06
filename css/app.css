@@ -310,6 +310,7 @@ li a.activo, li a:hover {
 }
 .categoria {
     margin-bottom: 2rem;
+    background-color: #00fa9a;
 }
 @media (min-width: 768px) { 
     .categoria {
@@ -324,7 +325,6 @@ li a.activo, li a:hover {
     text-align: center;
     height: 7rem;
     display: block;
-    padding: .5rem;
     font-size: 2.5rem;
 }
 .categoria a:hover {
@@ -340,7 +340,7 @@ float: right;
     .listado-categorias {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 0.5rem;
     }
     
 }
