@@ -810,3 +810,16 @@ select::-ms-expand {
     padding-right: 2rem;
 
 }
+
+.titulo-pro {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.wa {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 8rem;
+    margin: 0;
+    gap: 2rem;
+}
