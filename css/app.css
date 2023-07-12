@@ -726,7 +726,7 @@ float: right;
     width: 95%;
     margin: auto;
     grid-gap: 1rem;
-    padding: 4rem 0;
+    padding: 1rem 0;
     overflow: hidden;
 }
 
@@ -812,14 +812,136 @@ select::-ms-expand {
 }
 
 .titulo-pro {
+    display: grid;
+    gap: .5rem;
+    line-height: 1;
+}
+.contactos {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    justify-content: end;
+    margin: 0;
+    gap: .5rem;
+}
+.titulo-pro P {
+    padding: 0 5REM;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 .wa {
-    margin-top: 2rem;
+    max-width: 100%;
+    display: block;
     width: 8rem;
     height: 8rem;
     margin: 0;
-    gap: 2rem;
 }
+
+/*** btn-contacto ***/
+.btn-contactar {
+    background-color: #fde400;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 2rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+    width: 100%;
+}
+.btn-contactar:hover {
+    background-color: #9c8d02;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .btn-contactar {
+        width: auto;
+    }
+}
+
+/*** formulario contactar ***/
+.form-content {
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7)
+        ),
+        url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 800px;
+    /* border-radius: 25px; */
+}
+
+.form-content h2 {
+    color: #f4f6f9;
+    font-size: 3.5rem;
+}
+.form-content p {
+    color: #f4f6f9;
+    font-size: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+label {
+    font-size: 17px;
+    color: #959AAB;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #f4F6F9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+:focus {
+    outline: 1px solid #1E92E9;
+}
+
+.btn-f {
+    background-color: #1E92E9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-f:hover {
+    background-color: #4294d3;
+}
+
+@media (max-width: 991px ) {
+    .form-content {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    .form-content h2 {
+        font-size: 22px;
+    }
+    .form-content p{
+        font-size: 15px;
+    }
+}
+
+#modal::backdrop {
+    background-color: rgba(0,0,0,.55);
+}
+
+
+dialog {
+    margin: auto;
+    border-style:initial;
+    border-color: #1E92E9;
+    border-radius: 2rem;
+ }
