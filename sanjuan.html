@@ -38,9 +38,13 @@
     <main>
         <div class="titulo-pro">
             <h2 class="titulo text-center">Departamento en Conjunto Habitacinal Fonavi</h2>
-            <a href="https://wa.me/51910370344?text=Hola,  deseo información del inmueble" target="_blank"> <img class="wa" src="img/whatsapp-fill.svg" alt="whatsapp"></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas modi harum magni tempore, laboriosam hic ex, temporibus fuga reprehenderit tenetur natus, cumque praesentium consequatur sint fugiat aliquam magnam ullam?</p>
+            <span class="linea"></span>
         </div>
-        <span class="linea"></span>
+        <div class="contactos">
+            <a class="wa" href="https://wa.me/51910370344?text=Hola,  deseo información del inmueble" target="_blank"> <img class="wa" src="img/whatsapp-fill.svg" alt="whatsapp"></a>
+            <button class="btn-contactar" id="btn-abrir-modal">CONTACTAR</button>
+        </div>
         <div class="container galeria">
             <div class="caja caja1">
                 <a href="#img1"><img src="img/sanjuan/sanjuan1.jpg" alt="Fachada"></a>
@@ -134,6 +138,40 @@
             </div>
             <a class="cerrar" href="#">x</a>
         </div>
+
+        <dialog id="modal">
+            <div class="form-content">
+                <h2>Enviar formulario</h2>
+                <p>Contactate con INMOBILIARIA MiCasaSol, por el Inmueble de San Juan (FONAVI)</P>
+                <form action="https://formsubmit.co/jpl.juanpadilla@gmail.com" method="post">
+
+                    <div class="campo campo-c">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Su Correo Electrónico">
+                    </div>
+                    <div class="campo campo-c">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre"/>
+                    </div>    
+                    <div class="campo campo-c">
+                        <label for="tel">Teléfono:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Teléfono" />
+                    </div>
+                    <div class="campo campo-c">
+                        <label for="coments">Mensaje:</label>
+                        <textarea name="coments" id="coments" cols="20" rows="5">Hola! Quiero que me comuniquen por este inmueble FONAVI en alquiler que vi en la pagina</textarea>
+                    </div>
+                    <input id="btn-cerrar-modal" class="btn" type="submit" value="Enviar" /> 
+        
+                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/"> -->
+                    value="https://jpl2021.github.io/micasasol.github.io/sanjuan.html">
+        
+                    <input type="hidden" name="_captcha" value="false">
+        
+                </form>
+            </div>
+        </dialog>
+
     </main>
 
     <footer class="site-footer">
@@ -165,5 +203,6 @@
         </div>
         <p class="copyright">Todos los derechos Reservados, MiCasaSol</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
