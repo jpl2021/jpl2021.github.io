@@ -819,8 +819,9 @@ select::-ms-expand {
 .contactos {
     display: flex;
     justify-content: end;
-    margin: 0;
+    margin: 1.5rem;
     gap: .5rem;
+    background-color: #c6f3c0;
 }
 .titulo-pro P {
     padding: 0 5REM;
@@ -867,7 +868,7 @@ select::-ms-expand {
         rgba(40,42,55,1) 50%,
         rgba(40,42,55,0.7)
         ),
-        url(img/bg.jpg);
+        url(../img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -887,7 +888,7 @@ select::-ms-expand {
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
 }
 label {
     font-size: 17px;
@@ -904,6 +905,7 @@ input, textarea {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+
 :focus {
     outline: 1px solid #1E92E9;
 }
@@ -919,7 +921,11 @@ input, textarea {
     background-color: #4294d3;
 }
 
-@media (max-width: 991px ) {
+@media (max-width: 768px ) {
+    body{
+        line-height: 1.5;
+    }
+    
     .form-content {
         width: 100%;
     }
@@ -931,6 +937,20 @@ input, textarea {
     }
     .form-content p{
         font-size: 15px;
+    }
+    .campo-c {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .label {
+        margin-bottom: 0rem;
+    }
+    .campo label {
+        flex-basis: 0rem;
+    }
+    textarea, input {
+        margin-bottom: 0rem;
     }
 }
 
